@@ -24,12 +24,12 @@ python -u $ROOT/tools/faster_rcnn_train_val.py \
   --batch-size=1 \
   --epochs=25 \
   --dataset=cityscapes \
-  --resume=/path/to/checkpoint.pth \
-  --train_meta_file=/path/to/train.txt \
-  --target_meta_file=/path/to/foggy_train.txt \
-  --val_meta_file=/path/to/foggy_val.txt \
-  --datadir=/path/to/leftImg8bit/ \
-  --pretrained=/path/to/torchvision_models/vgg16-397923af.pth \
+  --resume=/dataset/SCDA/checkpoint.pth \
+  --train_meta_file=/dataset/SCDA/train.txt \
+  --target_meta_file=/dataset/SCDA/foggy_train.txt \
+  --val_meta_file=/dataset/SCDA/foggy_val.txt \
+  --datadir=/dataset/Cityscapes/leftImg8bit/ \
+  --pretrained=/dataset/SCDA/vgg16-397923af.pth \
   --results_dir=${ckdir}/${job_name}/results_dir \
   --save_dir=${ckdir}/${job_name} \
   2>&1 | tee ${ckdir}/${job_name}/train.log
