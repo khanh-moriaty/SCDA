@@ -1,0 +1,9 @@
+*.o
+*.so
+__pycache__/
+
+examples/faster-rcnn/cityscapes/vgg/meta_dataset_*
+
+datasets/pycocotools/_mask.c
+extensions/_cython_bbox/cython_bbox.c
+extensions/_cython_bbox/cython_nms.c
