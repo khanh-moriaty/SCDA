@@ -14,3 +14,5 @@ RUN     pip install -r requirements.txt
 
 COPY    . /src
 WORKDIR /src
+
+RUN	cd datasets/pycocotools && make
